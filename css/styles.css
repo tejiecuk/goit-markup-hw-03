@@ -274,6 +274,7 @@ body {
 .logo {
   display: block;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 .logo-footer {
   color: var(--primary-bgr);
