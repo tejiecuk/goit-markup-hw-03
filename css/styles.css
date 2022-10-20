@@ -50,7 +50,7 @@ body {
 }
 /* Header */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header .logo {
   font-family: var(--logo-font);
@@ -130,6 +130,7 @@ body {
   background: var(--secondary-bgr);
   text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -144,7 +145,7 @@ body {
   display: inline-block;
   min-width: 216px;
   padding: 10px 32px;
-  margin-bottom: 200px;
+  border-color: transparent;
 
   font-family: inherit;
   font-weight: 700;
@@ -234,9 +235,7 @@ body {
 .team-person .team-list + .team-list {
   margin-left: 30px;
 }
-.avatar {
-  margin-bottom: 30px;
-}
+
 .team-list {
   background-color: var(--primary-bgr);
 }
@@ -257,9 +256,11 @@ body {
   color: var(--color-text);
   margin-bottom: 10px;
 }
+.our-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-position {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -270,6 +271,14 @@ body {
   background-color: var(--secondary-bgr);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer .logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .logo {
   display: block;
@@ -283,6 +292,9 @@ body {
   font-style: normal;
 }
 .address-title {
+  display: block;
+  margin-bottom: 9px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -299,7 +311,12 @@ body {
 .footer-contact:focus {
   color: var(--logo-color);
 }
-
+.footer-link {
+  margin-bottom: 9px;
+}
+.footer-link:last-child {
+  margin-bottom: 0;
+}
 /* Portfolio */
 .filter-btn {
   display: flex;
@@ -329,11 +346,10 @@ body {
 .filter-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
 }
 .list-object {
   width: 370px;
-  margin-bottom: 30px;
 }
 .list-link {
   text-decoration: none;
@@ -350,13 +366,10 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 20px 24px;
 }
 .list-descrpt {
   display: block;
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
